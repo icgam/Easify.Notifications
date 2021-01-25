@@ -18,7 +18,7 @@ using System;
 using System.Linq;
 using FluentValidation.Results;
 
-namespace Easify.Extensions.Notifications.Core.Exceptions
+namespace Easify.Extensions.Notifications.Exceptions
 {
     public class NotificationOptionsException : Exception
     {

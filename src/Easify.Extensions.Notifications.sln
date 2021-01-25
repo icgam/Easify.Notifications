@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Extensions.Notifications.Core", "Easify.Extensions.Notifications.Core\Easify.Extensions.Notifications.Core.csproj", "{82CF5095-8AF2-4821-A951-2FEAB79ED506}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Extensions.Notifications.Extensions", "Easify.Extensions.Notifications.Extensions\Easify.Extensions.Notifications.Extensions.csproj", "{8B996EE1-1A29-4991-8512-65DE30D90651}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Extensions.Notifications.Messaging", "Easify.Extensions.Notifications.Messaging\Easify.Extensions.Notifications.Messaging.csproj", "{A75412D9-6464-46E2-84ED-5D90D1DE3A89}"
@@ -14,16 +12,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Extensions.Notificat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Extensions.Notifications.Templating.UnitTests", "Easify.Extensions.Notifications.Templating.UnitTests\Easify.Extensions.Notifications.Templating.UnitTests.csproj", "{7DB6F35B-FDD5-49D9-B1B4-94ACBD795930}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Extensions.Notifications", "Easify.Extensions.Notifications\Easify.Extensions.Notifications.csproj", "{60381FF9-B2D5-4B94-95BC-E07252C0620B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{82CF5095-8AF2-4821-A951-2FEAB79ED506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82CF5095-8AF2-4821-A951-2FEAB79ED506}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82CF5095-8AF2-4821-A951-2FEAB79ED506}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82CF5095-8AF2-4821-A951-2FEAB79ED506}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8B996EE1-1A29-4991-8512-65DE30D90651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B996EE1-1A29-4991-8512-65DE30D90651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B996EE1-1A29-4991-8512-65DE30D90651}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,5 +44,9 @@ Global
 		{7DB6F35B-FDD5-49D9-B1B4-94ACBD795930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DB6F35B-FDD5-49D9-B1B4-94ACBD795930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DB6F35B-FDD5-49D9-B1B4-94ACBD795930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60381FF9-B2D5-4B94-95BC-E07252C0620B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60381FF9-B2D5-4B94-95BC-E07252C0620B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60381FF9-B2D5-4B94-95BC-E07252C0620B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60381FF9-B2D5-4B94-95BC-E07252C0620B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

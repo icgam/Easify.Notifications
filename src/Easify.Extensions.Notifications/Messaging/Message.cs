@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Easify.Extensions.Notifications.Core.Messaging
+namespace Easify.Extensions.Notifications.Messaging
 {
     public sealed class Message
     {

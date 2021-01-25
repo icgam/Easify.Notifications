@@ -17,15 +17,15 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Easify.Extensions.Notifications.Core.Configuration;
-using Easify.Extensions.Notifications.Core.Configuration.Validators;
-using Easify.Extensions.Notifications.Core.Exceptions;
-using Easify.Extensions.Notifications.Core.Messaging;
+using Easify.Extensions.Notifications.Configuration;
+using Easify.Extensions.Notifications.Configuration.Validators;
+using Easify.Extensions.Notifications.Exceptions;
+using Easify.Extensions.Notifications.Messaging;
 using Easify.Extensions.Notifications.Templating;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Easify.Extensions.Notifications.Core
+namespace Easify.Extensions.Notifications
 {
     public class NotificationService : INotificationService
     {

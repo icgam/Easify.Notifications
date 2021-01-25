@@ -18,7 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Easify.Extensions.Notifications.Core\Easify.Extensions.Notifications.Core.csproj" />
+      <ProjectReference Include="..\Easify.Extensions.Notifications\Easify.Extensions.Notifications.csproj" />
+      <ProjectReference Include="..\Easify.Extensions.Notifications\Easify.Extensions.Notifications.csproj" />
     </ItemGroup>
 
 </Project>

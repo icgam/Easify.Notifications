@@ -15,9 +15,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Threading.Tasks;
-using Easify.Extensions.Notifications.Core.Configuration;
+using Easify.Extensions.Notifications.Configuration;
 
-namespace Easify.Extensions.Notifications.Core
+namespace Easify.Extensions.Notifications
 {
     public interface INotificationService
     {

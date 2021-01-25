@@ -16,7 +16,7 @@
 
 using System;
 
-namespace Easify.Extensions.Notifications.Core
+namespace Easify.Extensions.Notifications
 {
     public class Notification<T> where T : class
     {

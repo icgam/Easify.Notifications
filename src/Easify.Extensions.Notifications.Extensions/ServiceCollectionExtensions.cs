@@ -15,9 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using Easify.Extensions.Notifications.Core;
-using Easify.Extensions.Notifications.Core.Configuration;
-using Easify.Extensions.Notifications.Core.Messaging;
+using Easify.Extensions.Notifications.Configuration;
 using Easify.Extensions.Notifications.Messaging;
 using Easify.Extensions.Notifications.Templating;
 using Easify.Extensions.Notifications.Templating.HandleBars;

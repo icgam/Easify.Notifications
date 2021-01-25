@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Easify.Extensions.Notifications.Core.Messaging;
+using Easify.Extensions.Notifications.Messaging;
 
 // This software is part of the Easify framework
 // Copyright (C) 2019 Intermediate Capital Group
@@ -19,7 +19,7 @@ using Easify.Extensions.Notifications.Core.Messaging;
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace Easify.Extensions.Notifications.Core
+namespace Easify.Extensions.Notifications
 {
     public static class EmailAddressExtensions
     {

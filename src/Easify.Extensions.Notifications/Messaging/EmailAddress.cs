@@ -1,4 +1,4 @@
-﻿namespace Easify.Extensions.Notifications.Core.Messaging
+﻿namespace Easify.Extensions.Notifications.Messaging
 {
     public sealed class EmailAddress
     {

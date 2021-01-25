@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Easify.Extensions.Notifications.Core.Messaging
+namespace Easify.Extensions.Notifications.Messaging
 {
     public interface IMessagingService
     {

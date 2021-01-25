@@ -16,7 +16,7 @@
 
 using System;
 
-namespace Easify.Extensions.Notifications.Core.Exceptions
+namespace Easify.Extensions.Notifications.Exceptions
 {
     public class SmtpOptionsException : Exception
     {

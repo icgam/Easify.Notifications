@@ -1,9 +1,8 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Easify.Extensions.Notifications.Core.Configuration;
-using Easify.Extensions.Notifications.Core.Exceptions;
-using Easify.Extensions.Notifications.Core.Messaging;
+using Easify.Extensions.Notifications.Configuration;
+using Easify.Extensions.Notifications.Exceptions;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.Extensions.Logging;
