@@ -1,4 +1,4 @@
-﻿// This software is part of the Easify framework
+// This software is part of the Easify framework
 // Copyright (C) 2019 Intermediate Capital Group
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,17 +14,12 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using FluentValidation;
-
-namespace Easify.Extensions.Notifications.Configuration.Validators
+namespace Easify.Extensions.Notifications.Messaging.Configuration
 {
-    public class NotificationOptionsValidator : AbstractValidator<NotificationOptions>
+    public sealed class SmtpOptions
     {
-        public NotificationOptionsValidator()
-        {
-            RuleFor(m => m.Sender).NotEmpty();
-            RuleForEach(m => m.Profiles).NotEmpty().SetValidator(new NotificationProfileValidator());
-            RuleForEach(m => m.Templates).NotEmpty().SetValidator(new NotificationTemplateValidator());
-        }
+        public string Server { get; set; }
+        public int Port { get; set; } = 25;
+        public string LocalDomain { get; set; }
     }
 }

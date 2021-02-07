@@ -14,12 +14,16 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace Easify.Extensions.Notifications.Configuration
+using FluentValidation;
+
+namespace Easify.Extensions.Notifications.Messaging.Configuration.Validators
 {
-    public sealed class NotificationOptions
+    public class NotificationProfileValidator : AbstractValidator<NotificationProfile>
     {
-        public string Sender { get; set; }
-        public NotificationProfile[] Profiles { get; set; } = { };
-        public NotificationTemplate[] Templates { get; set; } = { };
+        public NotificationProfileValidator()
+        {
+            RuleFor(m => m.ProfileName).NotEmpty();
+            RuleForEach(m => m.Audiences).NotEmpty().SetValidator(new NotificationAudienceValidator());
+        }
     }
 }

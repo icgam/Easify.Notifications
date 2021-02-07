@@ -14,11 +14,10 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace Easify.Extensions.Notifications.Configuration
+namespace Easify.Extensions.Notifications.Messaging.Configuration
 {
-    public class NotificationTemplate
+    public static class NotificationProfileNames
     {
-        public string Name { get; set; }
-        public string Path { get; set; }
+        public const string DefaultProfile = "DefaultProfile";
     }
 }

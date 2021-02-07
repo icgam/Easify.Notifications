@@ -14,12 +14,15 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace Easify.Extensions.Notifications.Configuration
+using System;
+
+namespace Easify.Extensions.Notifications.Messaging.Exceptions
 {
-    public sealed class SmtpOptions
+    public class NotificationProfileNotFoundException : Exception
     {
-        public string Server { get; set; }
-        public int Port { get; set; } = 25;
-        public string LocalDomain { get; set; }
+        public NotificationProfileNotFoundException(string profileName) : base(
+            $"Template {profileName} is not found in list of the profiles")
+        {
+        }
     }
 }

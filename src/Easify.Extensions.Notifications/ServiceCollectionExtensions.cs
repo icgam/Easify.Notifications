@@ -15,13 +15,14 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System;
-using Easify.Extensions.Notifications.Configuration;
 using Easify.Extensions.Notifications.Messaging;
+using Easify.Extensions.Notifications.Messaging.Configuration;
+using Easify.Extensions.Notifications.MessagingService;
 using Easify.Extensions.Notifications.Templating;
 using Easify.Extensions.Notifications.Templating.HandleBars;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Easify.Extensions.Notifications.Extensions
+namespace Easify.Extensions.Notifications
 {
     public static class ServiceCollectionExtensions
     {

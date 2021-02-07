@@ -15,7 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 using System.Threading.Tasks;
-using Easify.Extensions.Notifications.Configuration;
+using Easify.Extensions.Notifications.Messaging.Configuration;
 
 namespace Easify.Extensions.Notifications
 {

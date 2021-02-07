@@ -16,8 +16,8 @@
 
 using System;
 using System.Threading.Tasks;
-using Easify.Extensions.Notifications.Exceptions;
 using Easify.Extensions.Notifications.Messaging;
+using Easify.Extensions.Notifications.Messaging.Exceptions;
 using FluentAssertions;
 using NSubstitute;
 using Xunit;

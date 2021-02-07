@@ -16,7 +16,7 @@
 
 using FluentValidation;
 
-namespace Easify.Extensions.Notifications.Configuration.Validators
+namespace Easify.Extensions.Notifications.Messaging.Configuration.Validators
 {
     public class NotificationTemplateValidator : AbstractValidator<NotificationTemplate>
     {

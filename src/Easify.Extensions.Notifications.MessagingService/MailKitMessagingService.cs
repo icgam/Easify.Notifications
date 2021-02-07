@@ -1,8 +1,9 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Easify.Extensions.Notifications.Configuration;
-using Easify.Extensions.Notifications.Exceptions;
+using Easify.Extensions.Notifications.Messaging;
+using Easify.Extensions.Notifications.Messaging.Configuration;
+using Easify.Extensions.Notifications.Messaging.Exceptions;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.Extensions.Logging;
@@ -25,7 +26,7 @@ using MimeKit;
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace Easify.Extensions.Notifications.Messaging
+namespace Easify.Extensions.Notifications.MessagingService
 {
     public sealed class MailKitMessagingService : IMessagingService
     {

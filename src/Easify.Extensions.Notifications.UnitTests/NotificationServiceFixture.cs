@@ -16,8 +16,8 @@
 
 using System;
 using System.Threading.Tasks;
-using Easify.Extensions.Notifications.Configuration;
 using Easify.Extensions.Notifications.Messaging;
+using Easify.Extensions.Notifications.Messaging.Configuration;
 using Easify.Extensions.Notifications.Templating;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;

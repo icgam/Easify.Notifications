@@ -17,10 +17,10 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Easify.Extensions.Notifications.Configuration;
-using Easify.Extensions.Notifications.Configuration.Validators;
-using Easify.Extensions.Notifications.Exceptions;
 using Easify.Extensions.Notifications.Messaging;
+using Easify.Extensions.Notifications.Messaging.Configuration;
+using Easify.Extensions.Notifications.Messaging.Configuration.Validators;
+using Easify.Extensions.Notifications.Messaging.Exceptions;
 using Easify.Extensions.Notifications.Templating;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;

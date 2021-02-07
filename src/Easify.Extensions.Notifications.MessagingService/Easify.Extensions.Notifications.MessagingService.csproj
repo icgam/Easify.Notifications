@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <Description>Notification</Description>
+        <Description>Notification Messaging</Description>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Authors>Mohammad Moattar</Authors>
         <Company>ICG</Company>
@@ -14,18 +14,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="FluentValidation" Version="9.2.0" />
-      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.9" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.9" />
+      <PackageReference Include="MailKit" Version="2.10.0" />
       <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.9" />
       <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.9" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Easify.Extensions.Notifications.MessagingService\Easify.Extensions.Notifications.MessagingService.csproj" />
       <ProjectReference Include="..\Easify.Extensions.Notifications.Messaging\Easify.Extensions.Notifications.Messaging.csproj" />
-      <ProjectReference Include="..\Easify.Extensions.Notifications.Templating.HandleBars\Easify.Extensions.Notifications.Templating.HandleBars.csproj" />
-      <ProjectReference Include="..\Easify.Extensions.Notifications.Templating\Easify.Extensions.Notifications.Templating.csproj" />
     </ItemGroup>
 
 </Project>

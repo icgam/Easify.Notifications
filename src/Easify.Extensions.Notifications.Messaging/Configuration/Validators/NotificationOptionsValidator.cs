@@ -1,4 +1,4 @@
-// This software is part of the Easify framework
+﻿// This software is part of the Easify framework
 // Copyright (C) 2019 Intermediate Capital Group
 // 
 // This program is free software: you can redistribute it and/or modify
@@ -14,15 +14,17 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System;
+using FluentValidation;
 
-namespace Easify.Extensions.Notifications.Exceptions
+namespace Easify.Extensions.Notifications.Messaging.Configuration.Validators
 {
-    public class NotificationTemplateNotFoundException : Exception
+    public class NotificationOptionsValidator : AbstractValidator<NotificationOptions>
     {
-        public NotificationTemplateNotFoundException(string templateName) : base(
-            $"Template {templateName} is not found in configuration")
+        public NotificationOptionsValidator()
         {
+            RuleFor(m => m.Sender).NotEmpty();
+            RuleForEach(m => m.Profiles).NotEmpty().SetValidator(new NotificationProfileValidator());
+            RuleForEach(m => m.Templates).NotEmpty().SetValidator(new NotificationTemplateValidator());
         }
     }
 }

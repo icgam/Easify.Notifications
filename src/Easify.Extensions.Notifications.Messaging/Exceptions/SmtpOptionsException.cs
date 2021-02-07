@@ -16,12 +16,11 @@
 
 using System;
 
-namespace Easify.Extensions.Notifications.Exceptions
+namespace Easify.Extensions.Notifications.Messaging.Exceptions
 {
-    public class NotificationProfileNotFoundException : Exception
+    public class SmtpOptionsException : Exception
     {
-        public NotificationProfileNotFoundException(string profileName) : base(
-            $"Template {profileName} is not found in list of the profiles")
+        public SmtpOptionsException(string propertyName) : base($"{propertyName} is missing from the configuration")
         {
         }
     }
