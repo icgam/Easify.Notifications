@@ -1,30 +1,81 @@
-Library Name 
-============
+# Easify Extensions - Notification Services
 
-Brief description of the component or library.
+The project consist of several packages which facilitate sending notifications. It covers the following scenarios:
 
-## Get Started
+1. Rendering the output message content (Current support is for handle bars using https://github.com/Antaris/FuManchu library)
 
-Description of how to start working with library
+2. Sending messages to multiple audiences using Smtp protocol (It has been implemented using https://github.com/jstedfast/MailKit)
 
-### How to use
+## Usage
 
-The usage of the library or link to the relevant wiki page need to be here.
+### Installation
 
-### How to Engage, Contribute, and Give Feedback
+Using NuGet
 
-Description of the steps or process to be a contributor to the project.
+```
+Install-Package Easify.Extensions.Notifications
+```
 
-Some of the best ways to contribute are to try things out, file issues, join in design conversations,
-and make pull-requests.
+Using dotnet cli
 
-* [Be an active contributor](./docs/CONTRIBUTING.md): Check out the contributing page to see the best places to log issues and start discussions.
-* [Roadmap](./docs/ROADMAP.md): The schedule and milestone themes for project.
+```
+dotnet add package Easify.Extensions.Notifications
+```
 
-## Reporting bugs and useful features
+### Configuration
 
-Security issues and bugs should be reported by creating the relevant features and bugs in issues sections
+There is an extension which help to setup the service for IServiceCollection.
 
-## Related projects
+```csharp
+services.AddNotification(configuration)
+```
 
-Include related projects 
+which is adding the following services to the DI container
+
+```csharp
+
+services.AddOptions().Configure<NotificationOptions>(configuration.GetSection(nameof(NotificationOptions)));
+services.AddOptions().Configure<SmtpOptions>(configuration.GetSection(nameof(SmtpOptions)));
+
+services.AddTransient<ITemplateProvider, FileBasedTemplateProvider>();
+services.AddTransient<IMessagingService, MailKitMessagingService>();
+services.AddTransient<ITemplateContentRenderer, HandleBarsTemplateContentRenderer>();
+services.AddTransient<ITemplateRenderer, TemplateRenderer>();
+services.AddTransient<INotificationService, NotificationService>();
+
+```
+
+You should notice every one of the services can be customize in order to implement something different.
+
+Also the following sections need to be added to the _appsettings.json_ file.
+
+```json
+"NotificationOptions": {
+    "Sender": "sender email address",
+    "Profiles": [
+        {
+            "ProfileName": "profile name",
+            "Audiences": [
+                {"Email": "email or distribution group name" }
+            ]
+        },
+    ],
+    "Templates": [
+        {
+            "Name": "template name",
+            "Path": "template default location relative to application"
+        },
+    ]
+},
+"SmtpOptions": {
+    "Server": "Smtp server name",
+    "LocalDomain": "ICGPLC",
+    "Port": "Optional. Default to 25"
+}
+
+```
+
+Then you can inject **INotificationService** to your classes to be able to send the email.
+
+**Note:** In ICG we are using Relay Messaging so there is no setup to be made on application servers to support smtp. Also the sender can be a fake email address or even a descriptive email address like
+*mezzanine-autosender@icgam.com*
