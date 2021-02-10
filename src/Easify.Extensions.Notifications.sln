@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Extensions.Notifications.MessagingService", "Easify.Extensions.Notifications.MessagingService\Easify.Extensions.Notifications.MessagingService.csproj", "{A75412D9-6464-46E2-84ED-5D90D1DE3A89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Extensions.Notifications.Messaging.MailKit", "Easify.Extensions.Notifications.Messaging.MailKit\Easify.Extensions.Notifications.Messaging.MailKit.csproj", "{A75412D9-6464-46E2-84ED-5D90D1DE3A89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Extensions.Notifications.Templating", "Easify.Extensions.Notifications.Templating\Easify.Extensions.Notifications.Templating.csproj", "{AA2C8AD1-8CDB-4AFF-8B40-AD820A24C418}"
 EndProject

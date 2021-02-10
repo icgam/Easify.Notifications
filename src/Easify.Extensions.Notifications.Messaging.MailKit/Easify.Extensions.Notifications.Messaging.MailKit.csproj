@@ -2,12 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <Description>Notification Messaging</Description>
+        <Description>MailKit implementation for Easify Notification Messaging</Description>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Authors>Mohammad Moattar</Authors>
         <Company>ICG</Company>
-        <PackageProjectUrl>http://github.com/icgam/Easify</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/icgam/Easify</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/icgam/Easify.Extensions.Notifications</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/icgam/Easify.Extensions.Notifications</RepositoryUrl>
         <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
         <Version>1.0.0</Version>
         <LangVersion>8</LangVersion>

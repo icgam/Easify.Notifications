@@ -17,7 +17,7 @@
 using System;
 using Easify.Extensions.Notifications.Messaging;
 using Easify.Extensions.Notifications.Messaging.Configuration;
-using Easify.Extensions.Notifications.MessagingService;
+using Easify.Extensions.Notifications.Messaging.MailKit;
 using Easify.Extensions.Notifications.Templating;
 using Easify.Extensions.Notifications.Templating.HandleBars;
 using Microsoft.Extensions.DependencyInjection;
