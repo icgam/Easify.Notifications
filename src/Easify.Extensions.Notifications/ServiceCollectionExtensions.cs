@@ -32,9 +32,11 @@ namespace Easify.Extensions.Notifications
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
-            services.AddOptions()
-                .Configure<NotificationOptions>(options => configureNotificationOptions?.Invoke(options));
-            services.AddOptions().Configure<SmtpOptions>(options => configureSmtpOptions?.Invoke(options));
+            services.AddOptions().Configure<NotificationOptions>(options 
+                => configureNotificationOptions?.Invoke(options));
+            
+            services.AddOptions().Configure<SmtpOptions>(options 
+                => configureSmtpOptions?.Invoke(options));
 
             services.AddTransient<ITemplateProvider, FileBasedTemplateProvider>();
             services.AddTransient<IMessagingService, MailKitMessagingService>();
