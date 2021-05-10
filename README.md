@@ -78,5 +78,4 @@ Also the following sections need to be added to the _appsettings.json_ file.
 
 Then you can inject **INotificationService** to your classes to be able to send the email.
 
-**Note:** In ICG we are using Relay Messaging so there is no setup to be made on application servers to support smtp. Also the sender can be a fake email address or even a descriptive email address like
-*mezzanine-autosender@icgam.com*
+**Note:** Use Relay Messaging so there is no setup to be made on application servers to support smtp. Also the sender can be a fake email address or even a descriptive email address.
