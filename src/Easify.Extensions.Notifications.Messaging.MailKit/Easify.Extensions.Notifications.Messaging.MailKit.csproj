@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Description>MailKit implementation for Easify Notification Messaging</Description>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Authors>Mohammad Moattar</Authors>
+        <Company>ICG</Company>
+        <PackageProjectUrl>https://github.com/icgam/Easify.Extensions.Notifications</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/icgam/Easify.Extensions.Notifications</RepositoryUrl>
+        <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+        <Version>1.0.0</Version>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MailKit" Version="2.10.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.9" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.9" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Easify.Extensions.Notifications.Messaging\Easify.Extensions.Notifications.Messaging.csproj" />
+    </ItemGroup>
+
+</Project>
