@@ -4,7 +4,7 @@
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
         <Description>Easify Notification Library</Description>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-        <Authors>Mohammad Moattar</Authors>
+        <Authors>Mohammad Moattar,David Cassell</Authors>
         <Company>ICG</Company>
         <PackageProjectUrl>https://github.com/icgam/Easify.Notifications</PackageProjectUrl>
         <RepositoryUrl>https://github.com/icgam/Easify.Notifications</RepositoryUrl>
