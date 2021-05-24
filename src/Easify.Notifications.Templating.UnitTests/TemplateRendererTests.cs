@@ -30,7 +30,6 @@ namespace Easify.Notifications.Templating.UnitTests
         {
             // Arrange
             var model = new Model();
-
             var templateProvider = Substitute.For<ITemplateProvider>();
             templateProvider.GetTemplateContentAsync(Arg.Any<string>()).Returns(Task.FromResult(template));
 
