@@ -14,18 +14,18 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="FluentValidation" Version="10.1.0" />
-      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
-      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
-      <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+        <PackageReference Include="FluentValidation" Version="10.1.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Easify.Notifications.Messaging.MailKit\Easify.Notifications.Messaging.MailKit.csproj" />
-      <ProjectReference Include="..\Easify.Notifications.Messaging\Easify.Notifications.Messaging.csproj" />
-      <ProjectReference Include="..\Easify.Notifications.Templating.HandleBars\Easify.Notifications.Templating.HandleBars.csproj" />
-      <ProjectReference Include="..\Easify.Notifications.Templating\Easify.Notifications.Templating.csproj" />
+        <ProjectReference Include="..\Easify.Notifications.Messaging.MailKit\Easify.Notifications.Messaging.MailKit.csproj"/>
+        <ProjectReference Include="..\Easify.Notifications.Messaging\Easify.Notifications.Messaging.csproj"/>
+        <ProjectReference Include="..\Easify.Notifications.Templating.HandleBars\Easify.Notifications.Templating.HandleBars.csproj"/>
+        <ProjectReference Include="..\Easify.Notifications.Templating\Easify.Notifications.Templating.csproj"/>
     </ItemGroup>
 
 </Project>

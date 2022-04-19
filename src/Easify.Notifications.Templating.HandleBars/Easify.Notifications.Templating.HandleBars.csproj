@@ -14,11 +14,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Easify.Notifications.Templating\Easify.Notifications.Templating.csproj" />
+        <ProjectReference Include="..\Easify.Notifications.Templating\Easify.Notifications.Templating.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="FuManchu" Version="1.6.0" />
+        <PackageReference Include="FuManchu" Version="1.6.0"/>
     </ItemGroup>
 
 </Project>

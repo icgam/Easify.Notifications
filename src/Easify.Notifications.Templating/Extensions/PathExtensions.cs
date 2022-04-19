@@ -1,35 +1,30 @@
-﻿using System;
-using System.IO;
-using System.Reflection;
+﻿namespace Easify.Notifications.Templating.Extensions;
 
-namespace Easify.Notifications.Templating.Extensions
+public static class PathExtensions
 {
-    public static class PathExtensions
+    public static string GetRelativePathToType<T>(this string filename, bool checkExistance = false)
     {
-        public static string GetRelativePathToType<T>(this string filename, bool checkExistance = false)
-        {
-            if (filename == null) throw new ArgumentNullException(nameof(filename));
+        if (filename == null) throw new ArgumentNullException(nameof(filename));
 
-            var location = Path.GetDirectoryName(typeof(T).GetTypeInfo().Assembly.Location);
-            var target = Path.Combine(location, filename);
+        var location = Path.GetDirectoryName(typeof(T).GetTypeInfo().Assembly.Location);
+        var target = Path.Combine(location, filename);
 
-            if (checkExistance && !File.Exists(target))
-                throw new FileNotFoundException($"File not found in {target}");
+        if (checkExistance && !File.Exists(target))
+            throw new FileNotFoundException($"File not found in {target}");
 
-            return target;
-        }
+        return target;
+    }
 
-        public static string GetRelativePath(this string filename, bool checkExistance = false)
-        {
-            if (filename == null) throw new ArgumentNullException(nameof(filename));
+    public static string GetRelativePath(this string filename, bool checkExistance = false)
+    {
+        if (filename == null) throw new ArgumentNullException(nameof(filename));
 
-            var location = AppDomain.CurrentDomain.BaseDirectory;
-            var target = Path.Combine(location, filename);
+        var location = AppDomain.CurrentDomain.BaseDirectory;
+        var target = Path.Combine(location, filename);
 
-            if (checkExistance && !File.Exists(target))
-                throw new FileNotFoundException($"File not found in {target}");
+        if (checkExistance && !File.Exists(target))
+            throw new FileNotFoundException($"File not found in {target}");
 
-            return target;
-        }
+        return target;
     }
 }
