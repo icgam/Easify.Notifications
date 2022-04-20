@@ -1,7 +1,4 @@
-﻿global using System;
-global using System.Threading.Tasks;
-
-global using Easify.Notifications.Messaging;
+﻿global using Easify.Notifications.Messaging;
 global using Easify.Notifications.Messaging.Configuration;
 global using Easify.Notifications.Templating;
 global using Easify.Notifications.Messaging.Exceptions;
