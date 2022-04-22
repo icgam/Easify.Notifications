@@ -1,5 +1,5 @@
-﻿global using Easify.Notifications.Messaging.Configuration;
-global using Easify.Notifications.Messaging;
+﻿global using Easify.Notifications.Messaging;
+global using Easify.Notifications.Messaging.Configuration;
 global using Easify.Notifications.Messaging.Configuration.Validators;
 global using Easify.Notifications.Messaging.Exceptions;
 global using Easify.Notifications.Messaging.MailKit;
