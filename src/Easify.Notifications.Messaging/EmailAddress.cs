@@ -1,24 +1,23 @@
-﻿namespace Easify.Notifications.Messaging
+﻿namespace Easify.Notifications.Messaging;
+
+public sealed class EmailAddress
 {
-    public sealed class EmailAddress
+    private EmailAddress(string email, string name)
     {
-        private EmailAddress(string email, string name)
-        {
-            Email = email;
-            Name = name;
-        }
+        Email = email;
+        Name = name;
+    }
 
-        public string Email { get; }
-        public string Name { get; }
+    public string Email { get; }
+    public string Name { get; }
 
-        public static EmailAddress From(string email)
-        {
-            return new EmailAddress(email, email);
-        }
+    public static EmailAddress From(string email)
+    {
+        return new EmailAddress(email, email);
+    }
 
-        public static EmailAddress From(string email, string name)
-        {
-            return new EmailAddress(email, name);
-        }
+    public static EmailAddress From(string email, string name)
+    {
+        return new EmailAddress(email, name);
     }
 }

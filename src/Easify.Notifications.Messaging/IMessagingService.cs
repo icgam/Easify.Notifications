@@ -1,9 +1,6 @@
-using System.Threading.Tasks;
+namespace Easify.Notifications.Messaging;
 
-namespace Easify.Notifications.Messaging
+public interface IMessagingService
 {
-    public interface IMessagingService
-    {
-        Task SendAsync(Message message);
-    }
+    Task SendAsync(Message message);
 }
