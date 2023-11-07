@@ -50,14 +50,22 @@ public sealed class MailKitMessagingService : IMessagingService
 
         if (string.IsNullOrWhiteSpace(_smtpOptions.Server))
             throw new SmtpOptionsException(nameof(_smtpOptions.Server));
+
+        if (string.IsNullOrWhiteSpace(_smtpOptions.UserName))
+            throw new SmtpOptionsException(nameof(_smtpOptions.UserName));
+
+        if (string.IsNullOrWhiteSpace(_smtpOptions.Password))
+            throw new SmtpOptionsException(nameof(_smtpOptions.Password));
     }
 
     private async Task SendEmailMessageAsync(MimeMessage message)
     {
         using (var client = new SmtpClient())
         {
-            client.LocalDomain = _smtpOptions.LocalDomain;
-            await client.ConnectAsync(_smtpOptions.Server, _smtpOptions.Port, SecureSocketOptions.None);
+            client.SslProtocols = System.Security.Authentication.SslProtocols.Tls12;
+
+            await client.ConnectAsync(_smtpOptions.Server, _smtpOptions.Port, SecureSocketOptions.StartTls);
+            client.Authenticate(_smtpOptions.UserName, _smtpOptions.Password);
             await client.SendAsync(message);
             await client.DisconnectAsync(true);
         }
